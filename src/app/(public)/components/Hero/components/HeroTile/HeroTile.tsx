@@ -2,7 +2,7 @@
 
 import { TypeAnimation } from "react-type-animation";
 
-const technologies = ["TypeScript", "React.js", "Next.js", "Tailwind", "Spring Boot"];
+const technologies = ["TypeScript", "React.js", "Next.js", "Tailwind CSS", "Spring Boot"];
 
 function HeroTitle() {
   return (

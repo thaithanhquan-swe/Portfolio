@@ -7,7 +7,7 @@ export interface Project {
   title: string;
   description: string;
   image: StaticImageData | string;
-  liveUrl?: string;
+  liveUrl: string;
   detailsUrl?: string;
   technologies: string[];
 }

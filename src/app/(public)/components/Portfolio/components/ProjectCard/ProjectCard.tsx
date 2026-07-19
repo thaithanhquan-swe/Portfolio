@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { Project } from "@/types/portfolio.types";
+import Link from "next/link";
 
 
 interface ProjectCardProps {
@@ -10,7 +11,7 @@ interface ProjectCardProps {
 function ProjectCard({ project }: ProjectCardProps) {
   return (
    <article className="group mx-auto flex h-full w-full max-w-95 flex-col rounded-[20px] border border-white/10 bg-[#181818]/90 p-2.5 transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-[#1d1d1d] sm:rounded-[22px] sm:p-3">
-      <div className="relative aspect-video overflow-hidden rounded-[16px] border border-white/10 bg-black">
+      <Link href={project.liveUrl} target="_blank" className="relative aspect-video overflow-hidden rounded-[16px] border border-white/10 bg-black">
         <Image
           src={project.image}
           alt={project.title}
@@ -20,7 +21,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         />
 
         <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/20 to-transparent" />
-      </div>
+      </Link>
 
       <div className="flex flex-1 flex-col px-1 pt-2">
         <h3 className="text-lg font-semibold tracking-[-0.03em] text-white sm:text-xl">
