@@ -4,11 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3da44f35-567c-411e-8cf5-a8a67eeb67da" name="Changes" comment="" />
+    <list default="true" id="3da44f35-567c-411e-8cf5-a8a67eeb67da" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/file.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/globe.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(public)/components/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(public)/components/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(public)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(public)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/assets/images/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/assets/images/store/main.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Lanyard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Lanyard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Background/Background.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Background/Background.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Navbar/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Navbar/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_D:/4tech/project/portfolio" value="3Ghn91b79TVGunPqqbwmpY3mOi5" />
+    </persistenceIdMap>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -16,23 +43,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.0071789625354066" />
-      <entry key="MS500" value="5.108253609340668" />
-      <entry key="S2" value="12.897156991051038" />
-      <entry key="S5" value="17.856552858814315" />
-      <entry key="S10" value="20.189945145795946" />
-      <entry key="S30" value="22.00384885850291" />
-      <entry key="S60" value="22.500520943755227" />
-      <entry key="M2" value="23.107098745550108" />
-      <entry key="M5" value="29.550129556912896" />
-      <entry key="M10" value="43.10521422484265" />
-      <entry key="M15" value="52.55623659876428" />
-      <entry key="M30" value="66.70684867884164" />
-      <entry key="H1" value="76.26373416030214" />
-      <entry key="H2" value="81.82997734693994" />
-      <entry key="H4" value="84.83547753480012" />
-      <entry key="D1" value="87.46117562654568" />
-      <entry key="W1" value="87.9227409786079" />
+      <entry key="MS100" value="1.71436282544615" />
+      <entry key="MS500" value="4.076271644761331" />
+      <entry key="S2" value="12.234279767672517" />
+      <entry key="S5" value="27.059864923443904" />
+      <entry key="S10" value="42.24595236843039" />
+      <entry key="S30" value="61.98073728552101" />
+      <entry key="S60" value="74.1434725454588" />
+      <entry key="M2" value="110.21626086260996" />
+      <entry key="M5" value="223.53610032446227" />
+      <entry key="M10" value="326.9101942825213" />
+      <entry key="M15" value="378.9414475257793" />
+      <entry key="M30" value="446.2814070043396" />
+      <entry key="H1" value="499.94725953885984" />
+      <entry key="H2" value="555.8275593361965" />
+      <entry key="H4" value="606.5133378044064" />
+      <entry key="D1" value="672.1528357605932" />
+      <entry key="W1" value="686.5019775644643" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -54,32 +81,109 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.8863029616167575" />
-      <entry key="MS500" value="5.050771015036615" />
-      <entry key="S2" value="12.863556389142733" />
-      <entry key="S5" value="17.83826785260973" />
-      <entry key="S10" value="20.179666434979275" />
-      <entry key="S30" value="22.000128587573037" />
-      <entry key="S60" value="22.49862050203246" />
-      <entry key="M2" value="23.10612025352985" />
-      <entry key="M5" value="29.54957010322609" />
-      <entry key="M10" value="43.10472969953328" />
-      <entry key="M15" value="52.555812791762484" />
-      <entry key="M30" value="66.70655892274013" />
-      <entry key="H1" value="76.26356240794986" />
-      <entry key="H2" value="81.82988355821917" />
-      <entry key="H4" value="84.83542849251756" />
-      <entry key="D1" value="87.46116713903352" />
-      <entry key="W1" value="87.92273975821195" />
+      <entry key="MS100" value="1.64087872165913" />
+      <entry key="MS500" value="4.03850178447946" />
+      <entry key="S2" value="12.203740516907716" />
+      <entry key="S5" value="27.032104882449133" />
+      <entry key="S10" value="42.22412053341274" />
+      <entry key="S30" value="61.97002827751608" />
+      <entry key="S60" value="74.13715716468515" />
+      <entry key="M2" value="110.21178418534048" />
+      <entry key="M5" value="223.53258399308902" />
+      <entry key="M10" value="326.9075824638122" />
+      <entry key="M15" value="378.9393995256592" />
+      <entry key="M30" value="446.280165235747" />
+      <entry key="H1" value="499.9465189581015" />
+      <entry key="H2" value="555.8271072378508" />
+      <entry key="H4" value="606.5130712884447" />
+      <entry key="D1" value="672.1527823489033" />
+      <entry key="W1" value="686.5019696509039" />
     </decayedShown>
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external"
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Ghn91b79TVGunPqqbwmpY3mOi5" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2026.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.26222.65" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.26222.65" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3da44f35-567c-411e-8cf5-a8a67eeb67da" name="Changes" comment="" />
+      <created>1784432514929</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1784432514929</updated>
+      <workItem from="1784432517426" duration="338000" />
+      <workItem from="1784432873567" duration="4060000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

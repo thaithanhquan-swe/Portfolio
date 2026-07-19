@@ -1,21 +1,18 @@
-"use client";
-
-import { images } from "@/app/assets/images";
-import Lanyard from "@/components/Lanyard";
+import HeroPlasma from "./components/HeroPlasma/HeroPlasma";
+import HeroTitle from "./components/HeroTile/HeroTile"
+import ScrollReveal from "@/components/motion/ScrollReveal";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden">
-      <div className="absolute top-0 right-0 h-full w-1/2">
-        <Lanyard
-          position={[0, 0, 20]}
-          gravity={[0, -40, 0]}
-          frontImage={images.main}
-          backImage={images.main}
-          imageFit="contain"
-          lanyardWidth={1}
-        />
-      </div>
+    <section
+      id="home"
+      className="relative min-h-[calc(100svh-6rem)] scroll-mt-20 pb-12 sm:pb-16 lg:min-h-[calc(100vh-7.5rem)] lg:pb-20"
+    >
+      <ScrollReveal direction="left" className="relative z-10 lg:max-w-[52%]">
+        <HeroTitle />
+      </ScrollReveal>
+
+      <HeroPlasma />
     </section>
   );
 }
