@@ -38,6 +38,7 @@ uniform float uSpeed;
 uniform float uDirection;
 uniform float uScale;
 uniform float uOpacity;
+uniform float uIterations;
 uniform vec2 uMouse;
 uniform float uMouseInteractive;
 out vec4 fragColor;
@@ -53,6 +54,7 @@ void mainImage(out vec4 o, vec2 C) {
   vec3 O, p, S;
 
   for (vec2 r = iResolution.xy, Q; ++i < 60.; O += o.w/d*o.xyz) {
+    if (i > uIterations) break;
     p = z*normalize(vec3(C-.5*r,r.y)); 
     p.z -= 4.; 
     S = p;
@@ -108,6 +110,7 @@ export const Plasma: React.FC<PlasmaProps> = ({
     const customColorRgb = color ? hexToRgb(color) : [1, 1, 1];
 
     const directionMultiplier = direction === 'reverse' ? -1.0 : 1.0;
+    const isMobile = window.matchMedia('(max-width: 767px)').matches;
 
     let renderer: Renderer;
     try {
@@ -115,7 +118,7 @@ export const Plasma: React.FC<PlasmaProps> = ({
         webgl: 2,
         alpha: true,
         antialias: false,
-        dpr: Math.min(window.devicePixelRatio || 1, 2)
+        dpr: isMobile ? 1 : Math.min(window.devicePixelRatio || 1, 2)
       });
     } catch {
       return;
@@ -142,6 +145,7 @@ export const Plasma: React.FC<PlasmaProps> = ({
         uDirection: { value: directionMultiplier },
         uScale: { value: scale },
         uOpacity: { value: opacity },
+        uIterations: { value: isMobile ? 32 : 60 },
         uMouse: { value: new Float32Array([0, 0]) },
         uMouseInteractive: { value: mouseInteractive ? 1.0 : 0.0 }
       }
@@ -180,10 +184,19 @@ export const Plasma: React.FC<PlasmaProps> = ({
     let raf = 0;
     let contextLost = false;
     let isVisible = true;
+    let lastFrameTime = 0;
+    const minimumFrameInterval = isMobile ? 1000 / 30 : 0;
     const t0 = performance.now();
 
     const loop = (t: number) => {
       if (contextLost || !isVisible) return;
+
+      if (minimumFrameInterval && t - lastFrameTime < minimumFrameInterval) {
+        raf = requestAnimationFrame(loop);
+        return;
+      }
+
+      lastFrameTime = t;
       const timeValue = (t - t0) * 0.001;
       if (direction === 'pingpong') {
         const pingpongDuration = 10;

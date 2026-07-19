@@ -4,7 +4,7 @@ import Plasma from "@/components/Plasma";
 
 export default function Background() {
   return (
-      <div className="absolute inset-0 motion-reduce:hidden">
+      <div className="pointer-events-none fixed inset-0 motion-reduce:hidden">
         <Plasma
           color="#B497CF"
           speed={0.7}

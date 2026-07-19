@@ -67,7 +67,9 @@ export default function Lanyard({
   lanyardImage = null,
   lanyardWidth = 1
 }: LanyardProps) {
+  const wrapperRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState<boolean>(() => typeof window !== 'undefined' && window.innerWidth < 768);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const handleResize = (): void => setIsMobile(window.innerWidth < 768);
@@ -75,16 +77,34 @@ export default function Lanyard({
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  useEffect(() => {
+    const wrapper = wrapperRef.current;
+    if (!wrapper) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { rootMargin: '120px 0px', threshold: 0 }
+    );
+
+    observer.observe(wrapper);
+    return () => observer.disconnect();
+  }, []);
+
   const frontImageUrl = typeof frontImage === 'string' ? frontImage : frontImage?.src ?? null;
   const backImageUrl = typeof backImage === 'string' ? backImage : backImage?.src ?? null;
   const lanyardImageUrl = typeof lanyardImage === 'string' ? lanyardImage : lanyardImage?.src ?? null;
 
   return (
-    <div className="lanyard-wrapper">
+    <div ref={wrapperRef} className="lanyard-wrapper">
       <Canvas
         camera={{ position, fov }}
-        dpr={[1, isMobile ? 1.5 : 2]}
-        gl={{ alpha: transparent }}
+        dpr={isMobile ? 1 : [1, 2]}
+        frameloop={isVisible ? 'always' : 'never'}
+        gl={{
+          alpha: transparent,
+          antialias: false,
+          powerPreference: 'high-performance'
+        }}
         onCreated={({ gl }) => gl.setClearColor(new THREE.Color(0x000000), transparent ? 0 : 1)}
       >
         <ambientLight intensity={Math.PI} />
@@ -113,20 +133,24 @@ export default function Lanyard({
             rotation={[0, 0, Math.PI / 3]}
             scale={[100, 0.1, 1]}
           />
-          <Lightformer
-            intensity={3}
-            color="white"
-            position={[1, 1, 1]}
-            rotation={[0, 0, Math.PI / 3]}
-            scale={[100, 0.1, 1]}
-          />
-          <Lightformer
-            intensity={10}
-            color="white"
-            position={[-10, 0, 14]}
-            rotation={[0, Math.PI / 2, Math.PI / 3]}
-            scale={[100, 10, 1]}
-          />
+          {!isMobile && (
+            <>
+              <Lightformer
+                intensity={3}
+                color="white"
+                position={[1, 1, 1]}
+                rotation={[0, 0, Math.PI / 3]}
+                scale={[100, 0.1, 1]}
+              />
+              <Lightformer
+                intensity={10}
+                color="white"
+                position={[-10, 0, 14]}
+                rotation={[0, Math.PI / 2, Math.PI / 3]}
+                scale={[100, 10, 1]}
+              />
+            </>
+          )}
         </Environment>
       </Canvas>
     </div>
@@ -362,7 +386,7 @@ function Band({
             <mesh geometry={nodes.card.geometry}>
               <meshPhysicalMaterial
                 map={cardMap}
-                map-anisotropy={16}
+                map-anisotropy={isMobile ? 4 : 16}
                 clearcoat={isMobile ? 0 : 1}
                 clearcoatRoughness={0.15}
                 roughness={0.9}
@@ -377,10 +401,10 @@ function Band({
       <mesh ref={band}>
         <meshLineGeometry />
         <meshLineMaterial
-          args={[{ resolution: new THREE.Vector2(isMobile ? 1000 : 1000, isMobile ? 2000 : 1000) }]}
+          args={[{ resolution: new THREE.Vector2(isMobile ? 512 : 1000, isMobile ? 1024 : 1000) }]}
           color="white"
           depthTest={false}
-          resolution={isMobile ? [1000, 2000] : [1000, 1000]}
+          resolution={isMobile ? [512, 1024] : [1000, 1000]}
           useMap={1}
           map={texture}
           repeat={[-4, 1]}
