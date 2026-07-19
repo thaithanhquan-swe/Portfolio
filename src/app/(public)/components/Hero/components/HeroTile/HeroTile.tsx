@@ -1,5 +1,6 @@
 "use client";
 
+import { MoveDown, MoveUpRight } from "lucide-react";
 import { TypeAnimation } from "react-type-animation";
 
 const technologies = ["TypeScript", "React.js", "Next.js", "Tailwind CSS", "Spring Boot"];
@@ -64,7 +65,7 @@ function HeroTitle() {
           className="group flex w-fit items-center gap-3 transition-colors duration-200 hover:text-white/65"
         >
           <span className="transition-transform duration-200 group-hover:translate-y-1">
-            ↓
+            <MoveDown size={17}/> 
           </span>
           <span>explore my work below</span>
         </a>
@@ -74,7 +75,7 @@ function HeroTitle() {
           className="group flex w-fit items-center gap-3 transition-colors duration-200 hover:text-white/65"
         >
           <span className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5">
-            ↗
+            <MoveUpRight size={17}/> 
           </span>
           <span>open to internship & freelance opportunities</span>
         </a>
