@@ -9,7 +9,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="relative scroll-mt-16 py-16 sm:scroll-mt-20 sm:py-20 lg:py-24"
+      className="relative scroll-mt-16 :scroll-mt-20 pt-4"
     >
       <div className="mx-auto flex max-w-7xl flex-col justify-center">
         <ScrollReveal direction="down">

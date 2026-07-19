@@ -34,7 +34,7 @@ export default function ScrollReveal({
           : { opacity: 0, ...hiddenPosition, scale: 0.985 }
       }
       whileInView={{ opacity: 1, x: 0, y: 0, scale: 1 }}
-      viewport={{ once: false, amount: 0.18, margin: "0px 0px -6% 0px" }}
+      viewport={{ once: true, amount: 0.18, margin: "0px 0px -6% 0px" }}
       transition={{
         duration: 0.7,
         delay: shouldReduceMotion ? 0 : delay,

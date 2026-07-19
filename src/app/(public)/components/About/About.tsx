@@ -9,7 +9,7 @@ function About() {
   return (
     <section
       id="about"
-      className="relative scroll-mt-16 overflow-hidden py-16 sm:scroll-mt-20 sm:py-20 lg:min-h-screen lg:py-24"
+      className="relative scroll-mt-16 overflow-hidden lg:min-h-screen"
     >
       <div className="mx-auto grid max-w-7xl items-center gap-10 sm:gap-14 lg:min-h-[calc(100vh-12rem)] lg:grid-cols-[1.25fr_0.75fr] lg:gap-16">
         {/* Content */}

@@ -16,7 +16,7 @@ function Portfolio() {
   return (
     <section
       id="portfolio"
-      className="relative min-h-screen scroll-mt-16 overflow-hidden py-16 sm:scroll-mt-20 sm:py-20 lg:py-24"
+      className="relative scroll-mt-16 overflow-hidden sm:scroll-mt-20 mb-25"
     >
       <div className="mx-auto max-w-7xl">
         <ScrollReveal direction="down">
