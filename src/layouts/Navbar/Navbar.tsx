@@ -123,7 +123,7 @@ export default function Navbar() {
           : { opacity: 0, y: -18, x: "-50%" }
       }
       animate={{ opacity: 1, y: 0, x: "-50%" }}
-      transition={{ duration: 0.65, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.45, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
       className="fixed top-2 left-1/2 z-50 w-[calc(100%-16px)] sm:top-4 sm:w-[calc(100%-32px)]"
     >
       <nav className="relative mx-auto flex h-12 w-full max-w-7xl items-center justify-between rounded-full border border-white/10 bg-[#111111]/90 px-4 shadow-[0_12px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:px-6 lg:px-7">
@@ -177,10 +177,10 @@ export default function Navbar() {
           {mobileMenuOpen && (
             <motion.div
               id="mobile-navigation"
-              initial={shouldReduceMotion ? false : { opacity: 0, y: -8, scale: 0.98 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              exit={{ opacity: 0, y: -8, scale: 0.98 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
+              initial={shouldReduceMotion ? false : { opacity: 0, y: -6 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -6 }}
+              transition={{ duration: 0.16, ease: "easeOut" }}
               className="absolute top-14 right-0 left-0 overflow-hidden rounded-3xl border border-white/10 bg-[#111111]/95 p-2 shadow-[0_20px_60px_rgba(0,0,0,0.5)] backdrop-blur-xl md:hidden"
             >
               {navItems.map((item) => (

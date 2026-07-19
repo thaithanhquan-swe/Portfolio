@@ -34,10 +34,10 @@ function Portfolio() {
           <motion.div
             key={activeTab}
             className="mt-5 sm:mt-7"
-            initial={{ opacity: 0, y: 12 }}
+            initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.28, ease: "easeOut" }}
+            exit={{ opacity: 0, y: -6 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
           >
             {activeTab === "projects" && <ProjectsTab />}
 

@@ -14,16 +14,16 @@ export default function AppMotion({ children }: AppMotionProps) {
   return (
     <MotionConfig
       reducedMotion="user"
-      transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
     >
       <motion.div
         key={pathname}
         initial={
           shouldReduceMotion
             ? false
-            : { opacity: 0, y: 14, filter: "blur(8px)" }
+            : { opacity: 0, y: 8 }
         }
-        animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+        animate={{ opacity: 1, y: 0 }}
       >
         {children}
       </motion.div>
