@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3da44f35-567c-411e-8cf5-a8a67eeb67da" name="Changes" comment="" />
+    <list default="true" id="3da44f35-567c-411e-8cf5-a8a67eeb67da" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/app/(public)/components/Hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(public)/components/Hero/Hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/(public)/components/Hero/components/HeroPlasma/HeroPlasma.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/(public)/components/Hero/components/HeroPlasma/HeroPlasma.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -32,7 +32,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <div className="relative z-10">
           <Navbar />
 
-          <main className="container">
+          <main className="container relative">
             <AppMotion>{children}</AppMotion>
           </main>
         </div>
