@@ -44,7 +44,7 @@ function About() {
 
           <div className='mt-6 grid gap-3 min-[430px]:flex min-[430px]:flex-wrap'>
             <a
-              href='/ThaiThanhQuan_Fullstack_Intern.pdf'
+              href='/ThaiThanhQuan_FullstackDeveloper_Intern.pdf'
               target='_blank'
               className='flex h-11 items-center justify-center gap-2 rounded-lg bg-white px-5 text-sm font-semibold text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/85'
             >
